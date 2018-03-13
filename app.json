@@ -1,0 +1,19 @@
+{
+  "name": "demoHere",
+  "description": "A platform for developers to present the live demo of their apps",
+  "repository": "https://github.com/dbads/demoHere",
+  "keywords": ["demoHere", "demo app", "heroku demoHere"],
+  "success_url":"/",
+  "env":{
+    "DISABLE_COLLECTSTATIC":"1", 
+    "SECRET_KEY": {
+      "description": "A secret key for verifying the integrity of signed cookies.",
+      "generator": "secret"
+    },
+  },
+  "addons":[
+    {
+	    "plan":"heroku-postgresql"
+    }
+  ], 
+}

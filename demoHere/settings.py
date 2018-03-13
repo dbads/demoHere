@@ -78,7 +78,7 @@ MIDDLEWARE = [
 ]
 
 
-ROOT_URLCONF = 'awesomeDemo.urls'
+ROOT_URLCONF = 'demoHere.urls'
 
 TEMPLATES = [
     {
@@ -98,7 +98,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'awesomeDemo.wsgi.application'
+WSGI_APPLICATION = 'demoHere.wsgi.application'
 
 AUTH_PASSWORD_VALIDATORS = [
     {
@@ -134,7 +134,7 @@ IPRESTRICT_GEOIP_ENABLED = False
 
 STATIC_URL = '/static/'
 
-STATIC_ROOT = PROJECT_DIR.child('awesomeDemo','static_root')
+STATIC_ROOT = PROJECT_DIR.child('demoHere','static_root')
 # static_root is the server outside our project wher e static files are sent to store
 
 STATICFILES_DIRS = (
@@ -143,7 +143,7 @@ STATICFILES_DIRS = (
     )
 
 MEDIA_URL = '/media/'
-MEDIA_ROOT = PROJECT_DIR.child('awesomeDemo','media_root')
+MEDIA_ROOT = PROJECT_DIR.child('demoHere','media_root')
 
 #Crispy forms tags settings
 CRISPY_TEMPLATE_PACK = 'bootstrap3'
